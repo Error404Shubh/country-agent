@@ -1,5 +1,9 @@
 #  Country Information Agent
 
+
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/a34d61d3-0b3e-4e5f-9c64-3c7455f90460" />
+
+
 A LangGraph agent that answers natural-language questions about countries. You ask it something like "What currency does Japan use?" and it figures out what you're asking, hits the REST Countries API, and gives you a clean answer. No database, no auth, no embeddings — just a three-step pipeline and a public API.
 
 Built with FastAPI on the backend and a dark dev-tool UI on the frontend. Runs in Docker.
