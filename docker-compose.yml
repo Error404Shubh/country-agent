@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY}
+      - LOG_LEVEL=INFO
+      - JSON_LOGS=false
+      - APP_VERSION=1.0.0-dev
+    volumes:
+      - ./app:/app/app:ro
+      - ./static:/app/static:ro
+    restart: unless-stopped
